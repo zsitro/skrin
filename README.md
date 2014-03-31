@@ -31,3 +31,8 @@ Paste your URL into the top navigation panel, select a monitor size on the left 
 ##Contribute
 
 Feel free to contribute by adding issues on GitHub or by creating pull requests with your shiny improvements/features
+
+
+## License
+
+MIT

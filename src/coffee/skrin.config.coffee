@@ -34,6 +34,6 @@ config =
 		# }
 	]
 
-config.resolution = config.resolutionOptions[2]
+config.resolution = config.resolutionOptions[3]
 
 module.exports = config
