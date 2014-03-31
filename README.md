@@ -30,10 +30,11 @@ Check out from git
 ```git clone git@github.com:zsitro/skrin.git```
 
 Install dependencies
-```npm install
-bower install```
+
+`npm install` and `bower install`
 
 Then build and serve with Gulp
+
 ```gulp serve```
 
 ## Known issues
