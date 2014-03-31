@@ -7,7 +7,7 @@ Test websites on your small screen like it would appear on huge monitors
 
 ##Why?
 
-There are several cases where I need to optimize or check a website on fullHD or bigger resolution while having only a 13" macbook with me. I tried a one or two other alternatives (there are quite few) but none of them offered authentic preview and easy control over this problem
+There are several cases where I need to optimize or check a website on fullHD or bigger resolution while having only a 13" macbook with me. I tried one or two other alternatives (there are quite few) but none of them offered authentic preview and easy control over this problem
 
 ##How does it work?
 
@@ -22,6 +22,19 @@ Paste your URL into the top navigation panel, select a monitor size on the left 
 
 - Chrome latest OSX
 - Firefox latest OSX
+
+##Insall a local copy
+
+Check out from git
+
+```git clone git@github.com:zsitro/skrin.git```
+
+Install dependencies
+```npm install
+bower install```
+
+Then build and serve with Gulp
+```gulp serve```
 
 ## Known issues
 
