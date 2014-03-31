@@ -27,6 +27,11 @@ config =
 			width: 1280
 			height: 800
 		}
+		# {
+		# 	name: 'Test app on large screen (1024×768)'
+		# 	width: 1024
+		# 	height: 768
+		# }
 	]
 
 config.resolution = config.resolutionOptions[2]
