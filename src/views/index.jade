@@ -1,0 +1,32 @@
+extends _layout
+
+block subpage_data
+	- dp.page.title = "Home"
+	- dp.page.slug = "index"
+	- dp.page.class = "l-index"
+	- dp.page.description = "Dopamine is a lightweight Node app to ease sitebuilding with modular Jade templates and Stylus"
+	- dp.page.keywords = "dopamine,sitebuild,jade,stylus"
+
+block content
+	div(ng-app='skrinApp')
+		div(ng-controller='skrinCtrl')
+
+			nav.m-dashboard
+				select(ng-model='data.resolution', ng-options="c.name for c in data.resolutionOptions")
+					//- option(value='') Select a screen size
+
+				input(type='text',name='skrinUrl',placeholder='url, Mister',ng-model='data.url').m-dashboard__field-url
+				input(type='range',min='10',max='100',ng-model='data.scale',ng-disabled='data.fitWidth')
+				span.m-dashboard__scale-caption {{scaleCaption(data.scale)}}%
+				//span.m-dashboard__separator &nbsp;|&nbsp;
+				input(id='fitWidth',type='checkbox',ng-model='data.fitWidth')
+				label(for='fitWidth') fitWidth
+
+				//button 1:1
+				//button fit width
+				//button fit all
+
+
+			iframe(ng-src='{{trustSrc(data.url)}}',width='{{data.width}}',height='{{data.height}}').m-viewport.js-skrin-viewport
+
+			div#render

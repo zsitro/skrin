@@ -1,0 +1,93 @@
+
+/* Generates font-face
+********************************/
+font-face($fontFamily, $fontPath)
+	@font-face {
+		font-family: $fontFamily;
+		font-style: normal;
+		font-weight: normal;
+
+		src: url( $fontPath + '.eot');
+		src: url( $fontPath + '.eot') format('eot'),
+			 url( $fontPath + '.woff') format('woff'),
+			 url( $fontPath + '.ttf')  format('truetype'),
+			 url( $fontPath + '.svg#' + $fontFamily) format('svg');
+	}
+
+
+/* Generates 1:1 container
+ * width and height
+********************************/
+square( _size )
+	if unit(_size) == ''
+		width (_size)px
+		height (_size)px
+	else
+		width _size
+		height _size
+
+/* Generates n:m container
+ * width and height
+********************************/
+size( _width, _height )
+	if unit(_width) == ''
+		width (_width)px
+		height (_height)px
+	else
+		width _width
+		height _height
+
+
+
+s( _width, _height )
+	size( _width, _height )
+
+
+f( $fontSize )
+	font-size $fontSize
+
+lh( $lineHeight )
+	line-height $lineHeight
+
+
+ta( $textAlign )
+	text-align $textAlign
+
+va( $verticalAlign )
+	vertical-align $verticalAlign
+
+ff( $fontFamily )
+	font-family $fontFamily
+
+tt( $transform )
+	text-transform $transform
+
+
+uppercase()
+	text-transform uppercase
+
+capitalize()
+	text-transform capitalize
+
+normalcase()
+	text-transform none
+
+normal()
+	font-style normal
+
+italic()
+	font-style italic
+
+pseudoinline()
+	inlineblock()
+	content ""
+	position relative
+
+pie(){
+	behavior: url('vendor/PIE/PIE.htc');
+}
+
+
+
+
+

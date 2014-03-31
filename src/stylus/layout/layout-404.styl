@@ -1,0 +1,132 @@
+body.l-404
+	//background-position center -190px
+
+//.l-404
+//
+//	.l-404-content
+//		border 0px solid
+//		width 80%
+//		margin 200px auto 100px
+//		text-align center
+//		color #464646
+//
+//		img
+//			margin-bottom 10px
+//
+//		h3
+//			font-os-bold()
+//			font-size 21px
+//			margin-bottom 20px
+//
+//		hr.dash
+//			border 0
+//			width 86px
+//			height 3px
+//			background #464646
+//			margin-bottom 20px
+//
+//		h4
+//			font-serif()
+//			font-size 36px
+//			color COLOR_GOLDEN
+//			uppercase()
+//			margin-bottom 17px
+//
+//		p
+//			font-serif()
+//			font-style italic
+//			font-size 21px
+//			padding-bottom 4px
+//
+//		a.m-button
+//			margin 26px auto 30px
+
+.l-404--animated
+	display none
+
+@-webkit-keyframes swing
+	0%
+		-webkit-transform rotateZ(-3deg)
+	50%
+		-webkit-transform rotateZ(3deg)
+	100%
+		-webkit-transform rotateZ(-3deg)
+
+
+@-moz-keyframes swing
+	0%
+		-moz-transform rotateZ(-3deg)
+	50%
+		-moz-transform rotateZ(3deg)
+	100%
+		-moz-transform rotateZ(-3deg)
+
+
+@-ms-keyframes swing
+	0%
+		-ms-transform rotateZ(-3deg)
+	50%
+		-ms-transform rotateZ(3deg)
+	100%
+		-ms-transform rotateZ(-3deg)		
+
+//vendor = official
+//@keyframes swing
+//	0%
+//		transform rotateZ(-3deg)
+//	50%
+//		transform rotateZ(3deg)
+//	100%
+//		transform rotateZ(-3deg)		
+
+
+.csstransforms
+	.l-404--static
+		display none
+	.l-404--animated
+		display block
+
+
+		.l-404__animation
+			position relative
+			overflow hidden
+
+			.l-404__image
+				position absolute
+				top 0
+				left 5%
+				padding 0
+				//margin 0
+				outline 0px solid
+				display block
+
+			.l-404__image--0
+				left 6%
+				-webkit-transform-origin 49% 40%
+				//margin-top -56%
+				//-webkit-transform translateY(-100%)
+				animation-duration 5s
+				animation-name swing
+				animation-iteration-count infinite
+				animation-timing-function ease-in-out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

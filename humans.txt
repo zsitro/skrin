@@ -1,0 +1,23 @@
+/* TEAM */
+	Project manager:
+	Website:
+	Twitter:
+	From:
+
+	Project manager:
+	Website:
+	From:
+
+	Web designer:
+	Website:
+	From:
+
+	Front-end developer: Gabor Zsoter
+	Website: http://zsitro.com
+	Github: http://github.com/zsitro
+	From: Hungary
+
+/* SITE */
+	Created: 2014-03-27
+	Languages: English
+	URL: http://skrin.zsitro.com
