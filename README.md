@@ -27,15 +27,11 @@ Paste your URL into the top navigation panel, select a monitor size on the left 
 
 Check out from git
 
-```git clone git@github.com:zsitro/skrin.git```
-
-Install dependencies
-
-`npm install` and `bower install`
-
-Then build and serve with Gulp
-
-```gulp serve```
+```git clone git@github.com:zsitro/skrin.git
+npm install
+bower install
+gulp serve
+```
 
 ## Known issues
 
