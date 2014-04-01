@@ -27,7 +27,8 @@ Paste your URL into the top navigation panel, select a monitor size on the left 
 
 Check out from git
 
-```git clone git@github.com:zsitro/skrin.git
+```
+git clone git@github.com:zsitro/skrin.git
 npm install
 bower install
 gulp serve
